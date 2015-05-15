@@ -10,6 +10,6 @@ namespace xml.Fachada
     interface IDatosFachada
     {
         [OperationContract]
-        System.Collections.Generic.List<xml.Modelo.copia> BuscarDatosCopia();
+        System.Collections.Generic.List<xml.Modelo.copia> BuscarDatosCopia(long cedula);
     }
 }

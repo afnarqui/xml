@@ -14,8 +14,9 @@ namespace xml.Fachada
         /// andrés naranjo 2015-01-01 devuelve una lista de la entidad copia
         /// </summary>
         /// <returns></returns>
-        public List<copia> BuscarDatosCopia() {
-            return new CopiaBl().BuscarDatosCopia().ToList();
+        public List<copia> BuscarDatosCopia(long cedula)
+        {
+            return new CopiaBl().BuscarDatosCopia(cedula).ToList();
         }
     }
 }
