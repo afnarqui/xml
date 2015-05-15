@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="desarrolloModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="desarrolloModelStoreContainer">
+          <EntitySet Name="copia" EntityType="desarrolloModel.Store.copia" store:Type="Tables" store:Schema="dbo" store:Name="copia">
+            <DefiningQuery>SELECT 
+      [copia].[cedulasociado] AS [cedulasociado], 
+      [copia].[codnit] AS [codnit], 
+      [copia].[codempresa] AS [codempresa], 
+      [copia].[coddependencia] AS [coddependencia], 
+      [copia].[periododeduce] AS [periododeduce], 
+      [copia].[fechanacimiento] AS [fechanacimiento], 
+      [copia].[deduceocacional] AS [deduceocacional], 
+      [copia].[sexo] AS [sexo], 
+      [copia].[estudios] AS [estudios], 
+      [copia].[codprofesion] AS [codprofesion], 
+      [copia].[estadocivil] AS [estadocivil], 
+      [copia].[nroacta] AS [nroacta], 
+      [copia].[fechaacta] AS [fechaacta], 
+      [copia].[salario] AS [salario], 
+      [copia].[codempresalabora] AS [codempresalabora], 
+      [copia].[fechaingresoLabora] AS [fechaingresoLabora], 
+      [copia].[tipocontrato] AS [tipocontrato], 
+      [copia].[fechaterminacontrato] AS [fechaterminacontrato], 
+      [copia].[cargo] AS [cargo], 
+      [copia].[codbanco] AS [codbanco], 
+      [copia].[numerocuenta] AS [numerocuenta], 
+      [copia].[agencia] AS [agencia], 
+      [copia].[codanalista] AS [codanalista], 
+      [copia].[rutaanalista] AS [rutaanalista], 
+      [copia].[tipocuenta] AS [tipocuenta], 
+      [copia].[estado] AS [estado], 
+      [copia].[ultimaactualizacion] AS [ultimaactualizacion], 
+      [copia].[operadoractualizo] AS [operadoractualizo], 
+      [copia].[paisnace] AS [paisnace], 
+      [copia].[dptonace] AS [dptonace], 
+      [copia].[ciudadnace] AS [ciudadnace], 
+      [copia].[idnits] AS [idnits], 
+      [copia].[idtipovivienda] AS [idtipovivienda], 
+      [copia].[szin] AS [szin], 
+      [copia].[idtiposalario] AS [idtiposalario], 
+      [copia].[tipopacto] AS [tipopacto], 
+      [copia].[web] AS [web], 
+      [copia].[idasociados] AS [idasociados], 
+      [copia].[codigotipo] AS [codigotipo]
+      FROM [dbo].[copia] AS [copia]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'desarrollo.dbo.copia' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="copia">
+          <Key>
+            <PropertyRef Name="cedulasociado" />
+            <PropertyRef Name="salario" />
+            <PropertyRef Name="agencia" />
+            <PropertyRef Name="codanalista" />
+            <PropertyRef Name="rutaanalista" />
+            <PropertyRef Name="estado" />
+            <PropertyRef Name="idnits" />
+            <PropertyRef Name="idasociados" />
+          </Key>
+          <Property Name="cedulasociado" Type="bigint" Nullable="false" />
+          <Property Name="codnit" Type="varchar" MaxLength="15" />
+          <Property Name="codempresa" Type="char" MaxLength="10" />
+          <Property Name="coddependencia" Type="char" MaxLength="10" />
+          <Property Name="periododeduce" Type="char" MaxLength="1" />
+          <Property Name="fechanacimiento" Type="datetime" />
+          <Property Name="deduceocacional" Type="char" MaxLength="1" />
+          <Property Name="sexo" Type="char" MaxLength="1" />
+          <Property Name="estudios" Type="char" MaxLength="1" />
+          <Property Name="codprofesion" Type="char" MaxLength="4" />
+          <Property Name="estadocivil" Type="char" MaxLength="2" />
+          <Property Name="nroacta" Type="char" MaxLength="10" />
+          <Property Name="fechaacta" Type="datetime" />
+          <Property Name="salario" Type="numeric" Nullable="false" />
+          <Property Name="codempresalabora" Type="char" MaxLength="12" />
+          <Property Name="fechaingresoLabora" Type="datetime" />
+          <Property Name="tipocontrato" Type="char" MaxLength="3" />
+          <Property Name="fechaterminacontrato" Type="datetime" />
+          <Property Name="cargo" Type="char" MaxLength="4" />
+          <Property Name="codbanco" Type="char" MaxLength="4" />
+          <Property Name="numerocuenta" Type="varchar" MaxLength="20" />
+          <Property Name="agencia" Type="int" Nullable="false" />
+          <Property Name="codanalista" Type="bigint" Nullable="false" />
+          <Property Name="rutaanalista" Type="char" Nullable="false" MaxLength="4" />
+          <Property Name="tipocuenta" Type="char" MaxLength="1" />
+          <Property Name="estado" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="ultimaactualizacion" Type="datetime" />
+          <Property Name="operadoractualizo" Type="varchar" MaxLength="4" />
+          <Property Name="paisnace" Type="char" MaxLength="3" />
+          <Property Name="dptonace" Type="char" MaxLength="2" />
+          <Property Name="ciudadnace" Type="char" MaxLength="5" />
+          <Property Name="idnits" Type="bigint" Nullable="false" />
+          <Property Name="idtipovivienda" Type="smallint" />
+          <Property Name="szin" Type="tinyint" />
+          <Property Name="idtiposalario" Type="smallint" />
+          <Property Name="tipopacto" Type="char" MaxLength="1" />
+          <Property Name="web" Type="tinyint" />
+          <Property Name="idasociados" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="codigotipo" Type="char" MaxLength="2" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="desarrolloModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DatosdesarrolloEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="copias" EntityType="desarrolloModel.copia" />
+        </EntityContainer>
+        <EntityType Name="copia">
+          <Key>
+            <PropertyRef Name="cedulasociado" />
+            <PropertyRef Name="salario" />
+            <PropertyRef Name="agencia" />
+            <PropertyRef Name="codanalista" />
+            <PropertyRef Name="rutaanalista" />
+            <PropertyRef Name="estado" />
+            <PropertyRef Name="idnits" />
+            <PropertyRef Name="idasociados" />
+          </Key>
+          <Property Name="cedulasociado" Type="Int64" Nullable="false" />
+          <Property Name="codnit" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="codempresa" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="coddependencia" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="periododeduce" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="fechanacimiento" Type="DateTime" Precision="3" />
+          <Property Name="deduceocacional" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="sexo" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="estudios" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="codprofesion" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="estadocivil" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="nroacta" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="fechaacta" Type="DateTime" Precision="3" />
+          <Property Name="salario" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="codempresalabora" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+          <Property Name="fechaingresoLabora" Type="DateTime" Precision="3" />
+          <Property Name="tipocontrato" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="fechaterminacontrato" Type="DateTime" Precision="3" />
+          <Property Name="cargo" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="codbanco" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="numerocuenta" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="agencia" Type="Int32" Nullable="false" />
+          <Property Name="codanalista" Type="Int64" Nullable="false" />
+          <Property Name="rutaanalista" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="tipocuenta" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="estado" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="ultimaactualizacion" Type="DateTime" Precision="3" />
+          <Property Name="operadoractualizo" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="paisnace" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="dptonace" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ciudadnace" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="idnits" Type="Int64" Nullable="false" />
+          <Property Name="idtipovivienda" Type="Int16" />
+          <Property Name="szin" Type="Byte" />
+          <Property Name="idtiposalario" Type="Int16" />
+          <Property Name="tipopacto" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="web" Type="Byte" />
+          <Property Name="idasociados" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="codigotipo" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="desarrolloModelStoreContainer" CdmEntityContainer="DatosdesarrolloEntities">
+          <EntitySetMapping Name="copias">
+            <EntityTypeMapping TypeName="desarrolloModel.copia">
+              <MappingFragment StoreEntitySet="copia">
+                <ScalarProperty Name="cedulasociado" ColumnName="cedulasociado" />
+                <ScalarProperty Name="codnit" ColumnName="codnit" />
+                <ScalarProperty Name="codempresa" ColumnName="codempresa" />
+                <ScalarProperty Name="coddependencia" ColumnName="coddependencia" />
+                <ScalarProperty Name="periododeduce" ColumnName="periododeduce" />
+                <ScalarProperty Name="fechanacimiento" ColumnName="fechanacimiento" />
+                <ScalarProperty Name="deduceocacional" ColumnName="deduceocacional" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+                <ScalarProperty Name="estudios" ColumnName="estudios" />
+                <ScalarProperty Name="codprofesion" ColumnName="codprofesion" />
+                <ScalarProperty Name="estadocivil" ColumnName="estadocivil" />
+                <ScalarProperty Name="nroacta" ColumnName="nroacta" />
+                <ScalarProperty Name="fechaacta" ColumnName="fechaacta" />
+                <ScalarProperty Name="salario" ColumnName="salario" />
+                <ScalarProperty Name="codempresalabora" ColumnName="codempresalabora" />
+                <ScalarProperty Name="fechaingresoLabora" ColumnName="fechaingresoLabora" />
+                <ScalarProperty Name="tipocontrato" ColumnName="tipocontrato" />
+                <ScalarProperty Name="fechaterminacontrato" ColumnName="fechaterminacontrato" />
+                <ScalarProperty Name="cargo" ColumnName="cargo" />
+                <ScalarProperty Name="codbanco" ColumnName="codbanco" />
+                <ScalarProperty Name="numerocuenta" ColumnName="numerocuenta" />
+                <ScalarProperty Name="agencia" ColumnName="agencia" />
+                <ScalarProperty Name="codanalista" ColumnName="codanalista" />
+                <ScalarProperty Name="rutaanalista" ColumnName="rutaanalista" />
+                <ScalarProperty Name="tipocuenta" ColumnName="tipocuenta" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="ultimaactualizacion" ColumnName="ultimaactualizacion" />
+                <ScalarProperty Name="operadoractualizo" ColumnName="operadoractualizo" />
+                <ScalarProperty Name="paisnace" ColumnName="paisnace" />
+                <ScalarProperty Name="dptonace" ColumnName="dptonace" />
+                <ScalarProperty Name="ciudadnace" ColumnName="ciudadnace" />
+                <ScalarProperty Name="idnits" ColumnName="idnits" />
+                <ScalarProperty Name="idtipovivienda" ColumnName="idtipovivienda" />
+                <ScalarProperty Name="szin" ColumnName="szin" />
+                <ScalarProperty Name="idtiposalario" ColumnName="idtiposalario" />
+                <ScalarProperty Name="tipopacto" ColumnName="tipopacto" />
+                <ScalarProperty Name="web" ColumnName="web" />
+                <ScalarProperty Name="idasociados" ColumnName="idasociados" />
+                <ScalarProperty Name="codigotipo" ColumnName="codigotipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
