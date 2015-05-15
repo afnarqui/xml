@@ -1,0 +1,5 @@
+E:\xml\xml\xml\WcfService1\bin\WcfService1.dll
+E:\xml\xml\xml\WcfService1\bin\WcfService1.pdb
+E:\xml\xml\xml\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+E:\xml\xml\xml\WcfService1\obj\Debug\WcfService1.dll
+E:\xml\xml\xml\WcfService1\obj\Debug\WcfService1.pdb
