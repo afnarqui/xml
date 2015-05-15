@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="desarrolloModelStoreContainer" CdmEntityContainer="DatosdesarrolloEntities">
+    <EntitySetMapping Name="copias">
+      <EntityTypeMapping TypeName="desarrolloModel.copia">
+        <MappingFragment StoreEntitySet="copia">
+          <ScalarProperty Name="cedulasociado" ColumnName="cedulasociado" />
+          <ScalarProperty Name="codnit" ColumnName="codnit" />
+          <ScalarProperty Name="codempresa" ColumnName="codempresa" />
+          <ScalarProperty Name="coddependencia" ColumnName="coddependencia" />
+          <ScalarProperty Name="periododeduce" ColumnName="periododeduce" />
+          <ScalarProperty Name="fechanacimiento" ColumnName="fechanacimiento" />
+          <ScalarProperty Name="deduceocacional" ColumnName="deduceocacional" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="estudios" ColumnName="estudios" />
+          <ScalarProperty Name="codprofesion" ColumnName="codprofesion" />
+          <ScalarProperty Name="estadocivil" ColumnName="estadocivil" />
+          <ScalarProperty Name="nroacta" ColumnName="nroacta" />
+          <ScalarProperty Name="fechaacta" ColumnName="fechaacta" />
+          <ScalarProperty Name="salario" ColumnName="salario" />
+          <ScalarProperty Name="codempresalabora" ColumnName="codempresalabora" />
+          <ScalarProperty Name="fechaingresoLabora" ColumnName="fechaingresoLabora" />
+          <ScalarProperty Name="tipocontrato" ColumnName="tipocontrato" />
+          <ScalarProperty Name="fechaterminacontrato" ColumnName="fechaterminacontrato" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="codbanco" ColumnName="codbanco" />
+          <ScalarProperty Name="numerocuenta" ColumnName="numerocuenta" />
+          <ScalarProperty Name="agencia" ColumnName="agencia" />
+          <ScalarProperty Name="codanalista" ColumnName="codanalista" />
+          <ScalarProperty Name="rutaanalista" ColumnName="rutaanalista" />
+          <ScalarProperty Name="tipocuenta" ColumnName="tipocuenta" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ultimaactualizacion" ColumnName="ultimaactualizacion" />
+          <ScalarProperty Name="operadoractualizo" ColumnName="operadoractualizo" />
+          <ScalarProperty Name="paisnace" ColumnName="paisnace" />
+          <ScalarProperty Name="dptonace" ColumnName="dptonace" />
+          <ScalarProperty Name="ciudadnace" ColumnName="ciudadnace" />
+          <ScalarProperty Name="idnits" ColumnName="idnits" />
+          <ScalarProperty Name="idtipovivienda" ColumnName="idtipovivienda" />
+          <ScalarProperty Name="szin" ColumnName="szin" />
+          <ScalarProperty Name="idtiposalario" ColumnName="idtiposalario" />
+          <ScalarProperty Name="tipopacto" ColumnName="tipopacto" />
+          <ScalarProperty Name="web" ColumnName="web" />
+          <ScalarProperty Name="idasociados" ColumnName="idasociados" />
+          <ScalarProperty Name="codigotipo" ColumnName="codigotipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

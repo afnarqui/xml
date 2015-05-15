@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="desarrolloModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DatosdesarrolloEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="copias" EntityType="desarrolloModel.copia" />
+  </EntityContainer>
+  <EntityType Name="copia">
+    <Key>
+      <PropertyRef Name="cedulasociado" />
+      <PropertyRef Name="salario" />
+      <PropertyRef Name="agencia" />
+      <PropertyRef Name="codanalista" />
+      <PropertyRef Name="rutaanalista" />
+      <PropertyRef Name="estado" />
+      <PropertyRef Name="idnits" />
+      <PropertyRef Name="idasociados" />
+    </Key>
+    <Property Name="cedulasociado" Type="Int64" Nullable="false" />
+    <Property Name="codnit" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="codempresa" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="coddependencia" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="periododeduce" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="fechanacimiento" Type="DateTime" Precision="3" />
+    <Property Name="deduceocacional" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="sexo" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="estudios" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="codprofesion" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="estadocivil" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="nroacta" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="fechaacta" Type="DateTime" Precision="3" />
+    <Property Name="salario" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="codempresalabora" Type="String" MaxLength="12" Unicode="false" FixedLength="true" />
+    <Property Name="fechaingresoLabora" Type="DateTime" Precision="3" />
+    <Property Name="tipocontrato" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="fechaterminacontrato" Type="DateTime" Precision="3" />
+    <Property Name="cargo" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="codbanco" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="numerocuenta" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="agencia" Type="Int32" Nullable="false" />
+    <Property Name="codanalista" Type="Int64" Nullable="false" />
+    <Property Name="rutaanalista" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="tipocuenta" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="estado" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="ultimaactualizacion" Type="DateTime" Precision="3" />
+    <Property Name="operadoractualizo" Type="String" MaxLength="4" Unicode="false" FixedLength="false" />
+    <Property Name="paisnace" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+    <Property Name="dptonace" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="ciudadnace" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="idnits" Type="Int64" Nullable="false" />
+    <Property Name="idtipovivienda" Type="Int16" />
+    <Property Name="szin" Type="Byte" />
+    <Property Name="idtiposalario" Type="Int16" />
+    <Property Name="tipopacto" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="web" Type="Byte" />
+    <Property Name="idasociados" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="codigotipo" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+  </EntityType>
+</Schema>

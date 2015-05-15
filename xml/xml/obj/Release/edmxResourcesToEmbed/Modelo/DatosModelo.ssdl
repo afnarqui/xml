@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="desarrolloModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="desarrolloModelStoreContainer">
+    <EntitySet Name="copia" EntityType="desarrolloModel.Store.copia" store:Type="Tables" store:Schema="dbo" store:Name="copia">
+      <DefiningQuery>SELECT 
+      [copia].[cedulasociado] AS [cedulasociado], 
+      [copia].[codnit] AS [codnit], 
+      [copia].[codempresa] AS [codempresa], 
+      [copia].[coddependencia] AS [coddependencia], 
+      [copia].[periododeduce] AS [periododeduce], 
+      [copia].[fechanacimiento] AS [fechanacimiento], 
+      [copia].[deduceocacional] AS [deduceocacional], 
+      [copia].[sexo] AS [sexo], 
+      [copia].[estudios] AS [estudios], 
+      [copia].[codprofesion] AS [codprofesion], 
+      [copia].[estadocivil] AS [estadocivil], 
+      [copia].[nroacta] AS [nroacta], 
+      [copia].[fechaacta] AS [fechaacta], 
+      [copia].[salario] AS [salario], 
+      [copia].[codempresalabora] AS [codempresalabora], 
+      [copia].[fechaingresoLabora] AS [fechaingresoLabora], 
+      [copia].[tipocontrato] AS [tipocontrato], 
+      [copia].[fechaterminacontrato] AS [fechaterminacontrato], 
+      [copia].[cargo] AS [cargo], 
+      [copia].[codbanco] AS [codbanco], 
+      [copia].[numerocuenta] AS [numerocuenta], 
+      [copia].[agencia] AS [agencia], 
+      [copia].[codanalista] AS [codanalista], 
+      [copia].[rutaanalista] AS [rutaanalista], 
+      [copia].[tipocuenta] AS [tipocuenta], 
+      [copia].[estado] AS [estado], 
+      [copia].[ultimaactualizacion] AS [ultimaactualizacion], 
+      [copia].[operadoractualizo] AS [operadoractualizo], 
+      [copia].[paisnace] AS [paisnace], 
+      [copia].[dptonace] AS [dptonace], 
+      [copia].[ciudadnace] AS [ciudadnace], 
+      [copia].[idnits] AS [idnits], 
+      [copia].[idtipovivienda] AS [idtipovivienda], 
+      [copia].[szin] AS [szin], 
+      [copia].[idtiposalario] AS [idtiposalario], 
+      [copia].[tipopacto] AS [tipopacto], 
+      [copia].[web] AS [web], 
+      [copia].[idasociados] AS [idasociados], 
+      [copia].[codigotipo] AS [codigotipo]
+      FROM [dbo].[copia] AS [copia]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'desarrollo.dbo.copia' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="copia">
+    <Key>
+      <PropertyRef Name="cedulasociado" />
+      <PropertyRef Name="salario" />
+      <PropertyRef Name="agencia" />
+      <PropertyRef Name="codanalista" />
+      <PropertyRef Name="rutaanalista" />
+      <PropertyRef Name="estado" />
+      <PropertyRef Name="idnits" />
+      <PropertyRef Name="idasociados" />
+    </Key>
+    <Property Name="cedulasociado" Type="bigint" Nullable="false" />
+    <Property Name="codnit" Type="varchar" MaxLength="15" />
+    <Property Name="codempresa" Type="char" MaxLength="10" />
+    <Property Name="coddependencia" Type="char" MaxLength="10" />
+    <Property Name="periododeduce" Type="char" MaxLength="1" />
+    <Property Name="fechanacimiento" Type="datetime" />
+    <Property Name="deduceocacional" Type="char" MaxLength="1" />
+    <Property Name="sexo" Type="char" MaxLength="1" />
+    <Property Name="estudios" Type="char" MaxLength="1" />
+    <Property Name="codprofesion" Type="char" MaxLength="4" />
+    <Property Name="estadocivil" Type="char" MaxLength="2" />
+    <Property Name="nroacta" Type="char" MaxLength="10" />
+    <Property Name="fechaacta" Type="datetime" />
+    <Property Name="salario" Type="numeric" Nullable="false" />
+    <Property Name="codempresalabora" Type="char" MaxLength="12" />
+    <Property Name="fechaingresoLabora" Type="datetime" />
+    <Property Name="tipocontrato" Type="char" MaxLength="3" />
+    <Property Name="fechaterminacontrato" Type="datetime" />
+    <Property Name="cargo" Type="char" MaxLength="4" />
+    <Property Name="codbanco" Type="char" MaxLength="4" />
+    <Property Name="numerocuenta" Type="varchar" MaxLength="20" />
+    <Property Name="agencia" Type="int" Nullable="false" />
+    <Property Name="codanalista" Type="bigint" Nullable="false" />
+    <Property Name="rutaanalista" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="tipocuenta" Type="char" MaxLength="1" />
+    <Property Name="estado" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ultimaactualizacion" Type="datetime" />
+    <Property Name="operadoractualizo" Type="varchar" MaxLength="4" />
+    <Property Name="paisnace" Type="char" MaxLength="3" />
+    <Property Name="dptonace" Type="char" MaxLength="2" />
+    <Property Name="ciudadnace" Type="char" MaxLength="5" />
+    <Property Name="idnits" Type="bigint" Nullable="false" />
+    <Property Name="idtipovivienda" Type="smallint" />
+    <Property Name="szin" Type="tinyint" />
+    <Property Name="idtiposalario" Type="smallint" />
+    <Property Name="tipopacto" Type="char" MaxLength="1" />
+    <Property Name="web" Type="tinyint" />
+    <Property Name="idasociados" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codigotipo" Type="char" MaxLength="2" />
+  </EntityType>
+</Schema>

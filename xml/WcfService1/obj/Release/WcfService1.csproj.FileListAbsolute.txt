@@ -1,9 +1,9 @@
 E:\xml\xml\xml\WcfService1\bin\WcfService1.dll
 E:\xml\xml\xml\WcfService1\bin\WcfService1.pdb
-E:\xml\xml\xml\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
-E:\xml\xml\xml\WcfService1\obj\Debug\WcfService1.dll
-E:\xml\xml\xml\WcfService1\obj\Debug\WcfService1.pdb
 E:\xml\xml\xml\WcfService1\bin\xml.dll
 E:\xml\xml\xml\WcfService1\bin\EntityFramework.dll
 E:\xml\xml\xml\WcfService1\bin\xml.pdb
 E:\xml\xml\xml\WcfService1\bin\EntityFramework.xml
+E:\xml\xml\xml\WcfService1\obj\Release\WcfService1.csprojResolveAssemblyReference.cache
+E:\xml\xml\xml\WcfService1\obj\Release\WcfService1.dll
+E:\xml\xml\xml\WcfService1\obj\Release\WcfService1.pdb
